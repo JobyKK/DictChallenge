@@ -1,0 +1,51 @@
+/**
+* vista.css
+* Place in the same source directory as Main.java
+* Ensure that your build system copies this file to your build output directory.
+*/
+ 
+#headerLabel {
+-fx-background-color: steelblue;
+-fx-text-fill: white;
+-fx-padding: 5px;
+}
+
+#btnMenu {
+-fx-border-color: red;
+}
+
+#vistaHolder {
+-fx-background-color: lightgrey;
+}
+
+#boxButtons {
+	-fx-border-color: lightblue;
+	-fx-color-label-visible: true;
+	-fx-stroke-line-cap: butt;
+}
+
+#pnSettings {
+	-fx-border-color: lightblue;
+	-fx-color-label-visible: true;
+	-fx-stroke-line-cap: butt;
+} 
+
+#btnsAccount {
+/*-fx-font-size: 20px;*/
+}
+#btnExit{
+	-fx-font-size: 20px;
+}
+#btnViewDictionaries{
+	-fx-font-size: 20px;
+}
+#btnLoadDictionary{
+	-fx-font-size: 20px;
+}
+#btnCreateDictionary{
+	-fx-font-size: 20px;
+}
+.button {
+/*-fx-base: lightblue;*/
+/*-fx-font-size: 20px;*/
+}

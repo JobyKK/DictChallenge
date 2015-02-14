@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="startPlane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StartController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="219.0" layoutY="49.0" prefHeight="55.0" prefWidth="124.0" text="Welcome" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="134.0" layoutY="152.0" text="Email" AnchorPane.bottomAnchor="230.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="126.0" layoutY="224.0" text="Password" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="360.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" alignment="CENTER" layoutX="286.0" layoutY="148.0" />
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="286.0" layoutY="198.0" />
+      <Button fx:id="btnEnter" alignment="CENTER" layoutX="358.0" layoutY="298.0" mnemonicParsing="false" onAction="#showMenu" prefHeight="39.0" prefWidth="94.0" text="Enter" />
+   </children>
+</AnchorPane>

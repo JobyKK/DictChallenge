@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="menuPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+   <children>
+      <VBox fx:id="boxButtons" layoutX="30.0" layoutY="51.0" prefHeight="215.0" prefWidth="270.0" AnchorPane.bottomAnchor="134.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <Button fx:id="btnViewDictionaries" mnemonicParsing="false" onAction="#viewDictionaries" prefHeight="25.0" prefWidth="265.0" text="View Dictionaries">
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btnLoadDictionary" mnemonicParsing="false" onAction="#loadDictionary" prefHeight="25.0" prefWidth="265.0" text="Load Dictionary">
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btnCreateDictionary" mnemonicParsing="false" onAction="#createDictionary" prefHeight="25.0" prefWidth="265.0" text="Create Dictionary">
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exitProgram" prefHeight="25.0" prefWidth="265.0" text="Exit">
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="316.0" layoutY="30.0" prefHeight="200.0" prefWidth="250.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="250.0" text="Statistics" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <ListView fx:id="lvStatistics" prefHeight="318.0" prefWidth="250.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

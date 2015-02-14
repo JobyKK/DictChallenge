@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 24, 2014 3:39:25 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping package="model">
+ <class catalog="dict_challenge" name="UserDictionary" table="User_Dictionary">
+  <composite-id class="UserDictionaryId" mapped="false" name="id" unsaved-value="undefined">
+   <key-property name="id" type="int">
+    <column name="id"/>
+   </key-property>
+   <key-property name="userid" type="int">
+    <column name="Userid"/>
+   </key-property>
+   <key-property name="dictionaryid" type="int">
+    <column name="Dictionaryid"/>
+   </key-property>
+  </composite-id>
+  <many-to-one class="Dictionary" fetch="select" insert="false"
+   name="dictionary" update="false">
+   <column name="Dictionaryid" not-null="true"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="maxScore" type="java.lang.Float">
+   <column name="max_score" precision="12" scale="0"/>
+  </property>
+  <property generated="never" lazy="false" name="bestTime" type="time">
+   <column length="8" name="best_time"/>
+  </property>
+ </class>
+</hibernate-mapping>

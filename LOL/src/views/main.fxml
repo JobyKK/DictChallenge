@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <ToolBar fx:id="toolBar" prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="btnMenu" mnemonicParsing="false" onAction="#showMenu" text="Menu" />
+            <MenuButton fx:id="btnsAccount" mnemonicParsing="false" text="Account">
+              <items>
+                <MenuItem fx:id="miLogIn" mnemonicParsing="false" onAction="#logIn" text="Log in" />
+                <MenuItem mnemonicParsing="false" text="Log out" />
+              </items>
+            </MenuButton>
+            <Button mnemonicParsing="false" text="Help" />
+            <Button mnemonicParsing="false" text="About" />
+        </items>
+      </ToolBar>
+      <AnchorPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0" />
+   </children>
+</VBox>

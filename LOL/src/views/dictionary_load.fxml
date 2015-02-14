@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DictionaryLoader">
+   <children>
+      <ListView fx:id="lvDictList" layoutX="32.0" layoutY="65.0" prefHeight="304.0" prefWidth="268.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="65.0" />
+      <Label layoutX="30.0" layoutY="37.0" text="Dictionary list" textAlignment="JUSTIFY">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLoad" layoutX="416.0" layoutY="65.0" mnemonicParsing="false" onAction="#loadDictionary" prefHeight="35.0" prefWidth="90.0" text="Load" AnchorPane.leftAnchor="416.0" AnchorPane.topAnchor="65.0" />
+      <Button fx:id="btnRefresh" layoutX="415.0" layoutY="118.0" mnemonicParsing="false" onAction="#refteshList" prefHeight="35.0" prefWidth="90.0" text="Refresh" AnchorPane.leftAnchor="416.0" />
+      <Button fx:id="btnBack" layoutX="416.0" layoutY="335.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="90.0" text="Back" />
+   </children>
+</AnchorPane>

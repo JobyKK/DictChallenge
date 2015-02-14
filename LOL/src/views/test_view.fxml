@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TestView">
+   <children>
+      <Pane layoutX="211.0" layoutY="28.0" prefHeight="33.0" prefWidth="178.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="178.0" text="WORD" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="197.0" layoutY="74.0" prefHeight="61.0" prefWidth="215.0">
+         <children>
+            <TextArea fx:id="txtWord" editable="false" prefHeight="61.0" prefWidth="215.0">
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+         </children>
+      </Pane>
+      <Label layoutX="494.0" layoutY="38.0" text="Words left" />
+      <TextField fx:id="txtCount" editable="false" layoutX="504.0" layoutY="62.0" prefHeight="25.0" prefWidth="47.0" />
+      <Pane layoutX="216.0" layoutY="147.0" prefHeight="33.0" prefWidth="178.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="1.0" prefHeight="26.0" prefWidth="178.0" text="TRANSLATION" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="198.0" layoutY="191.0" prefHeight="61.0" prefWidth="215.0">
+         <children>
+            <TextArea fx:id="txtTranslation" prefHeight="61.0" prefWidth="215.0">
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+         </children>
+      </Pane>
+      <Pane layoutX="97.0" layoutY="283.0" prefHeight="81.0" prefWidth="431.0">
+         <children>
+            <Button fx:id="btnNext" layoutX="62.0" layoutY="16.0" mnemonicParsing="false" onAction="#nextWord" prefHeight="49.0" prefWidth="96.0" text="Next" />
+            <Button fx:id="btnSubmit" layoutX="269.0" layoutY="15.0" mnemonicParsing="false" onAction="#submitWord" prefHeight="49.0" prefWidth="96.0" text="Submit" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
